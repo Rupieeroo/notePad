@@ -8,10 +8,6 @@ class Notepad
   end
 
   def list
-    @entries.each do |element|
-      element.each do |key, value|
-        p value
-      end
-    end
+    @entries
   end
 end
