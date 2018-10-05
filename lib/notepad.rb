@@ -8,6 +8,8 @@ class Notepad
   end
 
   def list
-    @entries
+    @entries.map do |note|
+      "#{note[:title]}: #{note[:body]}"
+    end.join("\n")
   end
 end
